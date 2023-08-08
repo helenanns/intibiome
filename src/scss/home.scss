@@ -24,6 +24,13 @@
         }
     }
 
+    & > .l-home-hero{
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+
     & > .l-home__content{
         font-size: rem(16px);
         line-height: 1.37;
