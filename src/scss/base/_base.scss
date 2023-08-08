@@ -23,6 +23,10 @@ body {
 	line-height: normal;
 	color: $dark-grey;
 	margin: 0;
+	padding-top: $headerHeight;
+	@media (min-width: $size-desktop) {
+		padding-top: 128px;
+	}
 }
 
 h1,

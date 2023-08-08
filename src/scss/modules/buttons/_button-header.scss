@@ -1,10 +1,17 @@
 .m-button-header{
-    height: rem(24px);
-    width: rem(24px);
+    height: rem(48px);
+    width: rem(48px);
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media (min-width: $size-desktop) {
+        &.JS__toggle-menu{
+            opacity: 0;
+            z-index: -1;
+        }
+    }
     
     & > .hamburger-inner{
         display: block;
