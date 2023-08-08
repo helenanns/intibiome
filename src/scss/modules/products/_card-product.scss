@@ -1,0 +1,39 @@
+.m-card-product {
+	border-radius: 0px 0px 16px 16px;
+	background: #fff;
+	box-shadow: 0px 3px 16px #00000014;
+    overflow: hidden;
+
+	a {
+		color: $dark-grey;
+	}
+
+
+    .m-card-product__image{
+        display: block;
+        width: 100%;
+        height: 350px;
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
+	.m-card-product__content {
+		padding: 24px 32px 32px;
+		text-align: center;
+		font-size: rem(20px);
+		margin-top: 24px;
+	}
+
+    .m-card-product__category{
+        min-height: 73px;
+        text-align: center;
+		padding: 24px 32px 32px;
+        color: $white;
+        font-size: rem(25px);
+        letter-spacing: 0.5px;
+    }
+}

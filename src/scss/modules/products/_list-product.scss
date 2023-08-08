@@ -1,0 +1,22 @@
+@import './card-product';
+
+
+
+.m-list-product{
+    overflow: visible!important;
+
+    &.swiper{
+        padding-bottom: 40px;
+    }
+
+
+    @media (min-width: $size-desktop) {
+        overflow: hidden!important;
+    }
+
+    @media (max-width: $size-desktop) {
+        .swiper-slide{
+            max-width: 356px;    
+        }
+    }
+}

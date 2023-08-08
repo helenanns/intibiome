@@ -1,4 +1,6 @@
 <?php
+//Suporte para imagens destacadas
+add_theme_support('post-thumbnails');
 
 // Remove Admin bar
 function remove_admin_bar()
