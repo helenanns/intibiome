@@ -1,0 +1,48 @@
+@import url("https://fonts.cdnfonts.com/css/trebuchet-ms-2");
+.hide {
+  display: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: transparent;
+}
+
+html {
+  min-height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin-top: 0 !important;
+}
+
+body {
+  height: 100%;
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 16px;
+  line-height: normal;
+  color: var(--color-dark);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.container {
+  margin: 0 auto;
+}
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImJhc2UvX2ZvbnRzL19hbGwuc2NzcyIsImJhc2UvX2hlbHBlcnMvX2FsbC5zY3NzIiwiYmFzZS9fYmFzZS5zY3NzIiwibGF5b3V0cy9fY29udGFpbmVyLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQVE7QUNBUjtFQUNDOzs7QUNFRDtFQUNDOzs7QUFHRDtFQUNDOzs7QUFHRDtFQUNDO0VBQ0E7RUFDQTtFQUNBOzs7QUFHRDtFQUNDO0VBQ0EsYUZqQmU7RUVrQmYsV0ZuQlc7RUVvQlg7RUFDQTs7O0FBR0Q7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0VBTUM7OztBQUdEO0FBQUE7RUFFQztFQUNBO0VBQ0E7OztBQ3ZDRDtFQUNJIiwiZmlsZSI6Im1haW4uY3NzIiwic291cmNlc0NvbnRlbnQiOlsiQGltcG9ydCB1cmwoJ2h0dHBzOi8vZm9udHMuY2RuZm9udHMuY29tL2Nzcy90cmVidWNoZXQtbXMtMicpO1xyXG5cclxuJGZvbnQtc2l6ZTogMTZweDtcclxuICRmb250LXByaW1hcnk6ICdUcmVidWNoZXQgTVMnLCBzYW5zLXNlcmlmOyIsIi5oaWRlIHtcclxuXHRkaXNwbGF5OiBub25lO1xyXG59IiwiQGltcG9ydCBcIi4vX2ZvbnRzL2FsbFwiO1xyXG5AaW1wb3J0IFwiLi9fdmVuZG9yL2FsbFwiO1xyXG5cclxuKiB7XHJcblx0Ym94LXNpemluZzogYm9yZGVyLWJveDtcclxufVxyXG5cclxuOjpzZWxlY3Rpb24ge1xyXG5cdGJhY2tncm91bmQ6IHRyYW5zcGFyZW50O1xyXG59XHJcblxyXG5odG1sIHtcclxuXHRtaW4taGVpZ2h0OiAxMDAlO1xyXG5cdC13ZWJraXQtZm9udC1zbW9vdGhpbmc6IGFudGlhbGlhc2VkO1xyXG5cdC1tb3otb3N4LWZvbnQtc21vb3RoaW5nOiBncmF5c2NhbGU7XHJcblx0bWFyZ2luLXRvcDogMCAhaW1wb3J0YW50O1xyXG59XHJcblxyXG5ib2R5IHtcclxuXHRoZWlnaHQ6IDEwMCU7XHJcblx0Zm9udC1mYW1pbHk6ICRmb250LXByaW1hcnk7XHJcblx0Zm9udC1zaXplOiAkZm9udC1zaXplO1xyXG5cdGxpbmUtaGVpZ2h0OiBub3JtYWw7XHJcblx0Y29sb3I6IHZhcigtLWNvbG9yLWRhcmspO1xyXG59XHJcblxyXG5oMSxcclxuaDIsXHJcbmgzLFxyXG5oNCxcclxuaDUsXHJcbmg2IHtcclxuXHRtYXJnaW46IDA7XHJcbn1cclxuXHJcbnVsLFxyXG5vbCB7XHJcblx0bWFyZ2luOiAwO1xyXG5cdHBhZGRpbmc6IDA7XHJcblx0bGlzdC1zdHlsZTogbm9uZTtcclxufVxyXG4iLCIuY29udGFpbmVye1xyXG4gICAgbWFyZ2luOiAwIGF1dG87XHJcbn0iXX0= */
