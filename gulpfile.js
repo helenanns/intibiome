@@ -53,8 +53,7 @@ const vendorJS = () => {
 const assets = {
 	scss: 'src/scss/*.scss',
 	js: [
-		'src/js/main.js',
-		'src/js/home.js',
+		'src/js/main.js'
 	],
 };
 

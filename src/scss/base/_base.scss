@@ -21,7 +21,8 @@ body {
 	font-family: $font-primary;
 	font-size: $font-size;
 	line-height: normal;
-	color: var(--color-dark);
+	color: $dark-grey;
+	margin: 0;
 }
 
 h1,
@@ -38,4 +39,8 @@ ol {
 	margin: 0;
 	padding: 0;
 	list-style: none;
+}
+
+a{
+	text-decoration: none;
 }
