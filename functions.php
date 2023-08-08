@@ -6,7 +6,7 @@ $theme_uri = get_template_directory_uri();
 include('includes/functions/set-head-content.php');
 
 // Post Types
-// include 'includes/functions/post-types.php';
+include 'includes/functions/post-types.php';
 
 // scripts
 include 'includes/functions/scripts.php';
