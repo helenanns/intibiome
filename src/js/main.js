@@ -1,5 +1,5 @@
-import header from './modules/header';
+import { toggleMenu } from './modules/header';
 
 document.addEventListener("DOMContentLoaded", () => {
-	header();
+	toggleMenu();
 });
