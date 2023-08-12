@@ -6,16 +6,20 @@ $fields = get_fields();?>
 
 <main class="main l-home" role="main">
 
-    <h1 class="hide"><?= get_bloginfo('title') . ' - ' . get_bloginfo('description') ?></h1>
+    <?= '<h1 class="hide">' . get_bloginfo('title') . ' - ' . get_bloginfo('description') . '</h1>' ?>
 
-    <?php  if($fields['hero']) : ?>
-        <section class="l-home-hero">
-            <picture>
-                <source media="(min-width: 1280px)" srcset="<?php echo $fields['hero']['desktop']; ?>">
-                <img src="<?php echo $fields['hero']['mobile']['url']; ?>" loading="lazy" alt="<?= $fields['hero']['mobile']['alt'] ?>">
-            </picture>
-        </section>
-    <?php endif; ?>
+    <?php 
+    /*
+        Banner Hero
+    */
+    if($fields['hero']) : 
+       
+        get_template_part('/includes/modules/banners/banner-full-width', 'hero', [
+            'images' => $fields['hero']
+        ]);
+
+    endif; 
+    ?>
 
 
     <section class="l-home__content">
@@ -37,15 +41,20 @@ $fields = get_fields();?>
         </section>
     <?php endif; ?>
 
-    <?php  if($fields['banner']) : ?>
-        <?php echo $fields['banner']['mobile']['url']; ?>
-        <section class="l-home-hero">
-            <picture>
-                <source media="(min-width: 1280px)" srcset="<?php echo $fields['banner']['desktop']; ?>">
-                <img src="<?php echo $fields['banner']['mobile']['url']; ?>" loading="lazy" alt="<?= $fields['banner']['mobile']['alt'] ?>">
-            </picture>
-        </section>
-    <?php endif; ?>
+
+    <?php 
+    /*
+        Banner
+    */
+    if($fields['banner']) : 
+       
+        get_template_part('/includes/modules/banners/banner-full-width', 'banner', [
+            'images' => $fields['banner']
+        ]);
+
+    endif; 
+    ?>
+
 
     <?php
     $news = simple_query('post', 3);
@@ -57,7 +66,7 @@ $fields = get_fields();?>
                     'query' => $news,
                 ]); ?>
 
-                <a href="" class="m-button m-button-primary">see more</a>
+                <a href="<?= get_post_type_archive_link('post');?>" class="m-button m-button-primary mx-auto">see more</a>
             </div>
         </section>
     <?php endif; ?>

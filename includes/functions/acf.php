@@ -68,6 +68,22 @@ add_action('acf/include_fields', function () {
 				'layout' => 'block',
 				'sub_fields' => [
 					[
+						'key' => 'field_64d7ff65ebd48',
+						'label' => 'Link',
+						'name' => 'link',
+						'aria-label' => '',
+						'type' => 'link',
+						'instructions' => '',
+						'required' => 0,
+						'conditional_logic' => 0,
+						'wrapper' => [
+							'width' => '',
+							'class' => '',
+							'id' => '',
+						],
+						'return_format' => 'array',
+					],
+					[
 						'key' => 'field_64d20b5dc3711',
 						'label' => 'Desktop',
 						'name' => 'desktop',
@@ -135,6 +151,22 @@ add_action('acf/include_fields', function () {
 				],
 				'layout' => 'block',
 				'sub_fields' => [
+					[
+						'key' => 'field_64d815addade0',
+						'label' => 'Link',
+						'name' => 'link',
+						'aria-label' => '',
+						'type' => 'link',
+						'instructions' => '',
+						'required' => 0,
+						'conditional_logic' => 0,
+						'wrapper' => [
+							'width' => '',
+							'class' => '',
+							'id' => '',
+						],
+						'return_format' => 'array',
+					],
 					[
 						'key' => 'field_64d20b91c3715',
 						'label' => 'Desktop',
