@@ -1,14 +1,11 @@
-@import './card-product';
+@import './card-news';
 
-
-
-.m-list-product{
+.m-slider-news{
     overflow: visible!important;
 
     &.swiper{
         padding-bottom: 40px;
     }
-
 
     @media (min-width: $size-desktop) {
         overflow: hidden!important;

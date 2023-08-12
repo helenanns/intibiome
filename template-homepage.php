@@ -21,7 +21,6 @@ $fields = get_fields();?>
     endif; 
     ?>
 
-
     <section class="l-home__content">
         <div class="container">
             <?php the_content(); ?>
@@ -29,12 +28,15 @@ $fields = get_fields();?>
     </section>
 
     <?php
+    /*
+        Products
+    */
     $products = simple_query('produtos', 3);
     if ($products): ?>
-        <section class="section l-home__products">
+        <section class="l-home__products">
             <div class="container">
                 <h2>Our products</h2>
-                <?php get_template_part('/includes/modules/list-product', 'products', [
+                <?php get_template_part('/includes/modules/products/slider-product', 'products', [
                     'query' => $products,
                 ]); ?>
             </div>
@@ -47,22 +49,20 @@ $fields = get_fields();?>
         Banner
     */
     if($fields['banner']) : 
-       
         get_template_part('/includes/modules/banners/banner-full-width', 'banner', [
             'images' => $fields['banner']
         ]);
-
     endif; 
-    ?>
-
-
-    <?php
+   
+    /*
+        News
+    */
     $news = simple_query('post', 3);
     if ($news): ?>
-        <section class="section l-home__news">
+        <section class="l-home__news">
             <div class="container">
                 <h2>keep up to date with our discoveries</h2>
-                <?php get_template_part('/includes/modules/list-news', 'news', [
+                <?php get_template_part('/includes/modules/news/slider-news', 'news', [
                     'query' => $news,
                 ]); ?>
 
@@ -70,7 +70,6 @@ $fields = get_fields();?>
             </div>
         </section>
     <?php endif; ?>
-
 
 </main>
 
