@@ -1,7 +1,26 @@
-Oi! :)
+# Olá! 👋
 
-A versão do node é a 16.13.2, ok? 
+Este é o projeto. Algumas instruções rápidas para você começar:
 
-Clone o repositório, instale as dependências com "npm install" e voalá! Dê um "npm start" para novas alterações no projeto com watch, ou apenas um "npm build" para monta-lo.
+## Requisitos
 
-É necessária a instalação do plugin "ACF" para funcionamento dos campos personalizados.
+- Node.js versão **16.13.2**
+- Plugin **ACF** instalado para o funcionamento dos campos personalizados.
+
+## Instalação
+
+
+
+Instale as dependências:
+
+npm install
+
+
+Iniciar o projeto em modo de desenvolvimento com watch:
+
+npm start
+
+
+Build do projeto:
+
+npm build
